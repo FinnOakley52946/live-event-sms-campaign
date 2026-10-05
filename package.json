@@ -1,0 +1,21 @@
+{
+  "name": "live-event-sms-campaign",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/campaign_server.ts",
+    "start": "tsx src/campaign_server.ts",
+    "demo": "tsx scripts/run_campaign.ts",
+    "test": "tsx --test test/campaign_policy.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}
